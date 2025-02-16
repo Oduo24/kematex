@@ -317,11 +317,11 @@ section {
 # Desktop Navigation
 --------------------------------------------------------------*/
 @media (min-width: 1280px) {
-  .navbar {
+  .custom-navbar {
     padding: 0;
   }
 
-  .navbar ul {
+  .custom-navbar ul {
     margin: 0;
     padding: 0;
     display: flex;
@@ -329,12 +329,12 @@ section {
     align-items: center;
   }
 
-  .navbar li {
+  .custom-navbar li {
     position: relative;
   }
 
-  .navbar a,
-  .navbar a:focus {
+  .custom-navbar a,
+  .custom-navbar a:focus {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -347,22 +347,22 @@ section {
     transition: 0.3s;
   }
 
-  .navbar a i,
-  .navbar a:focus i {
+  .custom-navbar a i,
+  .custom-navbar a:focus i {
     font-size: 12px;
     line-height: 0;
     margin-left: 5px;
   }
 
-  .navbar a:hover,
-  .navbar .active,
-  .navbar .active:focus,
-  .navbar li:hover>a {
+  .custom-navbar a:hover,
+  .custom-navbar .active,
+  .custom-navbar .active:focus,
+  .custom-navbar li:hover>a {
     color: #6429c4;
   }
 
-  .navbar .get-a-quote,
-  .navbar .get-a-quote:focus {
+  .custom-navbar .get-a-quote,
+  .custom-navbar .get-a-quote:focus {
     background: var(--color-primary);
     padding: 8px 20px;
     margin-left: 30px;
@@ -370,13 +370,13 @@ section {
     color: #fff;
   }
 
-  .navbar .get-a-quote:hover,
-  .navbar .get-a-quote:focus:hover {
+  .custom-navbar .get-a-quote:hover,
+  .custom-navbar .get-a-quote:focus:hover {
     color: #fff;
     background: #2756ff;
   }
 
-  .navbar .dropdown ul {
+  .custom-navbar .dropdown ul {
     display: block;
     position: absolute;
     left: 14px;
@@ -392,11 +392,11 @@ section {
     border-radius: 4px;
   }
 
-  .navbar .dropdown ul li {
+  .custom-navbar .dropdown ul li {
     min-width: 200px;
   }
 
-  .navbar .dropdown ul a {
+  .custom-navbar .dropdown ul a {
     padding: 10px 20px;
     font-size: 15px;
     text-transform: none;
@@ -404,29 +404,29 @@ section {
     color: var(--color-secondary);
   }
 
-  .navbar .dropdown ul a i {
+  .custom-navbar .dropdown ul a i {
     font-size: 12px;
   }
 
-  .navbar .dropdown ul a:hover,
-  .navbar .dropdown ul .active:hover,
-  .navbar .dropdown ul li:hover>a {
+  .custom-navbar .dropdown ul a:hover,
+  .custom-navbar .dropdown ul .active:hover,
+  .custom-navbar .dropdown ul li:hover>a {
     color: var(--color-primary);
   }
 
-  .navbar .dropdown:hover>ul {
+  .custom-navbar .dropdown:hover>ul {
     opacity: 1;
     top: 100%;
     visibility: visible;
   }
 
-  .navbar .dropdown .dropdown ul {
+  .custom-navbar .dropdown .dropdown ul {
     top: 0;
     left: calc(100% - 30px);
     visibility: hidden;
   }
 
-  .navbar .dropdown .dropdown:hover>ul {
+  .custom-navbar .dropdown .dropdown:hover>ul {
     opacity: 1;
     top: 0;
     left: 100%;
@@ -435,11 +435,11 @@ section {
 }
 
 @media (min-width: 1280px) and (max-width: 1366px) {
-  .navbar .dropdown .dropdown ul {
+  .custom-navbar .dropdown .dropdown ul {
     left: -90%;
   }
 
-  .navbar .dropdown .dropdown:hover>ul {
+  .custom-navbar .dropdown .dropdown:hover>ul {
     left: -100%;
   }
 }
@@ -456,7 +456,7 @@ section {
 # Mobile Navigation
 --------------------------------------------------------------*/
 @media (max-width: 1279px) {
-  .navbar {
+  .custom-navbar {
     position: fixed;
     top: 0;
     right: -100%;
@@ -467,7 +467,7 @@ section {
     z-index: 9997;
   }
 
-  .navbar ul {
+  .custom-navbar ul {
     position: absolute;
     inset: 0;
     padding: 50px 0 10px 0;
@@ -478,8 +478,8 @@ section {
     z-index: 9998;
   }
 
-  .navbar a,
-  .navbar a:focus {
+  .custom-navbar a,
+  .custom-navbar a:focus {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -492,22 +492,22 @@ section {
     transition: 0.3s;
   }
 
-  .navbar a i,
-  .navbar a:focus i {
+  .custom-navbar a i,
+  .custom-navbar a:focus i {
     font-size: 12px;
     line-height: 0;
     margin-left: 5px;
   }
 
-  .navbar a:hover,
-  .navbar .active,
-  .navbar .active:focus,
-  .navbar li:hover>a {
+  .custom-navbar a:hover,
+  .custom-navbar .active,
+  .custom-navbar .active:focus,
+  .custom-navbar li:hover>a {
     color: #fff;
   }
 
-  .navbar .get-a-quote,
-  .navbar .get-a-quote:focus {
+  .custom-navbar .get-a-quote,
+  .custom-navbar .get-a-quote:focus {
     background: var(--color-primary);
     padding: 8px 20px;
     border-radius: 4px;
@@ -515,14 +515,14 @@ section {
     color: #fff;
   }
 
-  .navbar .get-a-quote:hover,
-  .navbar .get-a-quote:focus:hover {
+  .custom-navbar .get-a-quote:hover,
+  .custom-navbar .get-a-quote:focus:hover {
     color: #fff;
     background: rgba(13, 66, 255, 0.8);
   }
 
-  .navbar .dropdown ul,
-  .navbar .dropdown .dropdown ul {
+  .custom-navbar .dropdown ul,
+  .custom-navbar .dropdown .dropdown ul {
     position: static;
     display: none;
     padding: 10px 0;
@@ -531,8 +531,8 @@ section {
     border: 1px solid #19335c;
   }
 
-  .navbar .dropdown>.dropdown-active,
-  .navbar .dropdown .dropdown>.dropdown-active {
+  .custom-navbar .dropdown>.dropdown-active,
+  .custom-navbar .dropdown .dropdown>.dropdown-active {
     display: block;
   }
 
@@ -562,11 +562,11 @@ section {
     overflow: hidden;
   }
 
-  .mobile-nav-active .navbar {
+  .mobile-nav-active .custom-navbar {
     right: 0;
   }
 
-  .mobile-nav-active .navbar:before {
+  .mobile-nav-active .custom-navbar:before {
     content: "";
     position: fixed;
     inset: 0;
@@ -1947,27 +1947,32 @@ section {
 .team4 {
   padding-top: 20px;
   font-family: var(--font-secondary);
-	color: #010816;
+  color: #010816;
   font-weight: 300;
 }
 
-.team4 h1, .team4 h2, .team4 h3, .team4 h4, .team4 h5, .team4 h6 {
+.team4 h1,
+.team4 h2,
+.team4 h3,
+.team4 h4,
+.team4 h5,
+.team4 h6 {
   color: #3e4555;
 }
 
 .team4 .font-weight-medium {
-	font-weight: 500;
+  font-weight: 500;
 }
 
 .team4 h5 {
-    line-height: 22px;
-    font-size: 18px;
+  line-height: 22px;
+  font-size: 18px;
 }
 
 .team4 .subtitle {
-    color: #8d97ad;
-    line-height: 24px;
-		font-size: 13px;
+  color: #8d97ad;
+  line-height: 24px;
+  font-size: 13px;
 }
 
 .team4 ul li a {
@@ -1981,5 +1986,11 @@ section {
 .team4 ul li a:hover {
   -webkit-transform: translate3d(0px, -5px, 0px);
   transform: translate3d(0px, -5px, 0px);
-	color: #316ce8;
+  color: #316ce8;
+}
+
+.blurred-caption {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
 }

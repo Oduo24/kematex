@@ -25,6 +25,8 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <!-- MDB CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css" rel="stylesheet" />
 
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
@@ -43,7 +45,7 @@
 
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
-      <nav id="navbar" class="navbar">
+      <nav id="navbar" class="custom-navbar">
         <ul>
           <li><a href="index.html" class="active">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -57,21 +59,68 @@
   <!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center justify-content-center text-center">
-    <div class="container-fluid hero">
-      <div class="row gy-4 d-flex justify-content-center hero-content">
-        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center tagline">
-          <h2 data-aos="fade-up">Transportation &amp; Logistics</h2>
-          <p data-aos="fade-up" data-aos-delay="100" class=""><strong>Moving Your World, Seamlessly</strong></p>
+  <!-- Carousel wrapper -->
+  <div id="carouselBasicExample" class="carousel slide carousel-fade" data-mdb-ride="carousel" data-mdb-carousel-init>
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+      <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="2" aria-label="Slide 3"></button>
+    </div>
 
-          <form action="#" class="form-search d-flex align-items-stretch mb-3" data-aos="fade-up" data-aos-delay="200">
-            <input type="text" class="form-control" placeholder="Your tracking number">
-            <button type="submit" class="btn btn-primary">Track</button>
-          </form>
+    <!-- Inner -->
+    <div class="carousel-inner">
+      <!-- Single item -->
+      <div class="carousel-item active">
+        <div class="image-container" style="overflow: hidden; height: 600px;"> <!-- Set your desired height here -->
+          <img src="assets/img/depot_hero_1.jpg" class="d-block w-100" alt=""
+            style="object-fit: cover; width: 100%; height: 100%; object-position: top;" />
+        </div>
+        <div class="carousel-caption d-none d-md-block blurred-caption">
+          <h5>Your Trusted Partner in Logistics</h5>
+          <p>We ensure your goods reach their destination safely and on time. Count on us for reliable solutions.</p>
+        </div>
+      </div>
+
+      <!-- Single item -->
+      <div class="carousel-item">
+        <div class="image-container" style="overflow: hidden; height: 600px;"> <!-- Set your desired height here -->
+          <img src="assets/img/depot_hero_1.jpg" class="d-block w-100" alt=""
+            style="object-fit: cover; width: 100%; height: 100%; object-position: center;" />
+        </div>
+        <div class="carousel-caption d-none d-md-block blurred-caption">
+          <h5>Streamlined Solutions for Your Business</h5>
+          <p>Optimize your supply chain with our advanced logistics services. We deliver efficiency, speed, and
+            cost-effectiveness.</p>
+        </div>
+      </div>
+
+      <!-- Single item -->
+      <div class="carousel-item">
+        <div class="image-container" style="overflow: hidden; height: 600px;"> <!-- Set your desired height here -->
+          <img src="assets/img/depot_hero_1.jpg" class="d-block w-100" alt=""
+            style="object-fit: cover; width: 100%; height: 100%; object-position: bottom;" />
+        </div>
+        <div class="carousel-caption d-none d-md-block blurred-caption">
+          <h5>Connecting the World, Delivering Excellence</h5>
+          <p>We provide seamless logistics solutions that bridge distances and bring the world closer to you.</p>
         </div>
       </div>
     </div>
-  </section><!-- End Hero Section -->
+    <!-- Inner -->
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- Carousel wrapper -->
 
   <main id="main">
     <!-- ======= Services Section ======= -->
@@ -587,6 +636,8 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+  <!-- MDB JS -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
